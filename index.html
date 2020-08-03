@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: inherit;
+    }
+
+    body {
+      box-sizing: border-box;
+      background-color: #333;
+    }
+
+    .container {
+      width: 250px;
+      margin: 100px auto;
+      border: 1px solid #fff;
+    }
+
+    .display {
+      background-color: #ddd;
+      width: 200px;
+      margin: 15px auto 5px;
+      padding: 10px;
+      font-size: 20px;
+      text-align: right;
+    }
+
+    .row {
+      width: 200px;
+      margin: 10px auto;
+    }
+
+    button {
+      /* padding: 15px; */
+      height: 47px;
+      width: 47px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="display" id="display">0</div>
+    <div id="board">
+      <div class="row">
+        <button class="btn" id="seven">7</button>
+        <button class="btn" id="eight">8</button>
+        <button class="btn" id="nine">9</button>
+        <button class="btn" id="division">/</button>
+      </div>
+      <div class="row">
+        <button class="btn" id="six">6</button>
+        <button class="btn" id="five">5</button>
+        <button class="btn" id="four">4</button>
+        <button class="btn" id="multiplication">x</button>
+      </div>
+      <div class="row">
+        <button class="btn" id="three">3</button>
+        <button class="btn" id="two">2</button>
+        <button class="btn" id="one">1</button>
+        <button class="btn" id="subtraction">-</button>
+      </div>
+      <div class="row">
+        <button class="btn" id="escape">c</button>
+        <button class="btn" id="zero">0</button>
+        <button class="btn" id="equal">=</button>
+        <button class="btn" id="addition">+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
